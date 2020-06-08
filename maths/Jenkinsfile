@@ -37,8 +37,8 @@ pipeline {
             steps {
                 rtServer (
                     id: "ARTIFACTORY_SERVER",
-                    url: "http://artifactory:8081/artifactory",
-		    credentialsId: 'admin.jfrog'
+                    url: "http://artifactory:8082/artifactory",
+		    credentialsId: 'adminjfrog'
                 )
 
                 rtMavenDeployer (
@@ -51,8 +51,8 @@ pipeline {
                 rtMavenResolver (
                     id: "MAVEN_RESOLVER",
                     serverId: "ARTIFACTORY_SERVER",
-                    releaseRepo: "libs-release",
-                    snapshotRepo: "libs-snapshot"
+                    releaseRepo: "libs-release-local",
+                    snapshotRepo: "libs-snapshot-local"
                 )
             }
         }
