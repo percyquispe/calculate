@@ -31,13 +31,13 @@ pipeline {
                     snapshotRepo: "libs-snapshot-local"
                 )
 
-    		// defines the dependencies resolution details
-                rtMavenResolver (
-                    id: "MAVEN_RESOLVER",
-                    serverId: "ARTIFACTORY_SERVER",
-                    releaseRepo: "libs-release-local",
-                    snapshotRepo: "libs-snapshot-local"
-                )
+    		//// defines the dependencies resolution details
+                //rtMavenResolver (
+                //    id: "MAVEN_RESOLVER",
+                //    serverId: "ARTIFACTORY_SERVER",
+                //    releaseRepo: "libs-release-local",
+                //    snapshotRepo: "libs-snapshot-local"
+                //)
             }
         }
 
