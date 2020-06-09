@@ -35,7 +35,7 @@ pipeline {
                 rtMavenResolver (
                     id: "MAVEN_RESOLVER",
                     serverId: "ARTIFACTORY_SERVER",
-                    releaseRepo: "libs-release",
+                    releaseRepo: "repo_maven",
                     snapshotRepo: "libs-snapshot"
                 )
             }
